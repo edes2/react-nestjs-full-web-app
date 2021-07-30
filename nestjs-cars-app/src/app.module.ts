@@ -11,8 +11,8 @@ import { ComponentsModule } from './components/components.module';
     ConfigModule.forRoot(),
     DatabaseModule,
     GraphQLModule.forRoot({
-      playground: (process.env.NODE_ENV === 'production' && true) || false,
-      debug: (process.env.NODE_ENV === 'production' && true) || false,
+      playground: true,
+      debug: true,
       autoSchemaFile: true,
     }),
     ComponentsModule,
